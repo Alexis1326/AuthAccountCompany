@@ -1,0 +1,353 @@
+{
+	"info": {
+		"_postman_id": "f99744d3-590c-49de-9f3b-e678a6e0134f",
+		"name": "crudAuth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25859571"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InVzdWFyaW9AZXhhbXBsZS5jb20iLCJzdWIiOjMsImlhdCI6MTc0MTkwNzU2MywiZXhwIjoxNzQxOTExMTYzfQ.RduC_Bch0LfaEOAmbiv1DGyvOnL7B6h7mD__D5G9Vvc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Juan Pérez\",\n  \"email\": \"nuevo_usuarsdfio@example.com\",\n  \"password\": \"password123\",\n  \"companyId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/users"
+					},
+					"response": []
+				},
+				{
+					"name": "ReadAll",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/users"
+					},
+					"response": []
+				},
+				{
+					"name": "Read",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/users/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Juan Perez Updated\",\n  \"email\": \"juan.updated@example.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/users/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/users/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Company",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Tech Corp\",\n  \"direccion\": \"123 Tech Street\",\n  \"ciudadId\": 1,\n  \"departamentoId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/companies"
+					},
+					"response": []
+				},
+				{
+					"name": "ReadAll",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/companies"
+					},
+					"response": []
+				},
+				{
+					"name": "Read",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/companies/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Tech Corp Updated\",\n  \"direccion\": \"456 Updated Street\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/companies/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/companies/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "ReadAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/products"
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Laptop\",\n  \"descripcion\": \"High-end gaming laptop\",\n  \"precio\": 1500,\n  \"companyId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/products"
+					},
+					"response": []
+				},
+				{
+					"name": "Read",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/products/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Laptop Updated\",\n  \"precio\": 1600\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/products/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/products/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sedd",
+			"item": [
+				{
+					"name": "Seed",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/seed"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "JWT_TOKEN",
+			"item": [
+				{
+					"name": "registerUser",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"nombre\": \"Juan Pérez\",\n  \"email\": \"usuario@example.com\",\n  \"password\": \"password123\",\n  \"companyId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/auth/signup"
+					},
+					"response": []
+				},
+				{
+					"name": "TokenLogin",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"usuario@example.com\",\n  \"password\": \"password123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8080/MS/COM/crudAuth/RSCrudAuth/V1.0/auth/login"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
