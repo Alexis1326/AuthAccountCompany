@@ -1,10 +1,10 @@
-CRUDAUTH - Sistema de Gestión de Cuentas y Empresas
-Descripción
+🚀 CRUDAUTH - Sistema de Gestión de Cuentas y Empresas
+📝 Descripción
 CRUDAUTH es una aplicación backend desarrollada en NestJS que proporciona una API RESTful para la gestión de empresas, productos y usuarios. La aplicación está diseñada para ser escalable, modular y fácil de mantener, siguiendo las mejores prácticas de desarrollo de software.
 
 El proyecto utiliza TypeORM para la gestión de la base de datos, Passport para la autenticación basada en JWT, y NestJS como framework principal. Además, se integra con PostgreSQL como base de datos principal.
 
-Características Principales
+🌟 Características Principales
 Gestión de Empresas: Creación, lectura, actualización y eliminación (CRUD) de empresas.
 
 Gestión de Productos: CRUD de productos asociados a empresas.
@@ -19,7 +19,7 @@ Logs Centralizados: Uso de un sistema de logging para monitorear el comportamien
 
 Configuración Dinámica: Uso de variables de entorno para configurar la aplicación.
 
-Estructura del Proyecto
+🗂️ Estructura del Proyecto
 El proyecto sigue una estructura modular y organizada:
 
 Copy
@@ -101,8 +101,7 @@ Copy
  ┃ ┃ ┃ ┗ 📜users.module.ts
  ┣ 📜app.module.ts
  ┗ 📜main.ts
-
-Tecnologías Utilizadas
+🛠️ Tecnologías Utilizadas
 NestJS: Framework backend para Node.js.
 
 TypeORM: ORM para la gestión de la base de datos.
@@ -117,7 +116,7 @@ ConfigModule: Gestión de variables de entorno.
 
 Logging: Sistema de logs centralizado.
 
-Configuración del Proyecto
+⚙️ Configuración del Proyecto
 Requisitos Previos
 Node.js (v16 o superior)
 
@@ -145,11 +144,10 @@ Define las siguientes variables:
 
 env
 Copy
-PORT= '8080'
-TIMEOUT= '1800000'
-JWT_SECRET= 'aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789+AbCdEfGhIjKl='
-DATABASE_URL= 'postgresql://postgres.mdqkqypggdxouqdvgsvz:C8zjzxdMNQX040F2@aws-0-us-west-1.pooler.supabase.com:6543/postgres'
-
+PORT=8080
+TIMEOUT=1800000
+JWT_SECRET=aBcDeFgHiJkLmNoPqRsTuVwXyZ0123456789+AbCdEfGhIjKl=
+DATABASE_URL=postgresql://postgres.mdqkqypggdxouqdvgsvz:C8zjzxdMNQX040F2@aws-0-us-west-1.pooler.supabase.com:6543/postgres
 Ejecuta las migraciones de TypeORM:
 
 bash
@@ -160,7 +158,7 @@ Inicia la aplicación:
 bash
 Copy
 npm run start
-Endpoints de la API
+🌐 Endpoints de la API
 Autenticación
 POST /auth/login: Inicia sesión y devuelve un JWT.
 
@@ -199,17 +197,17 @@ PUT /users/:id: Actualiza un usuario.
 
 DELETE /users/:id: Elimina un usuario.
 
-Ejecución de Seeders
+🌱 Ejecución de Seeders
 Para inicializar la base de datos con datos de prueba, ejecuta el siguiente comando:
 
 bash
 Copy
 npm run seed
-
-Contacto
+📧 Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en contactarme:
 
 Nombre: Ferney Alexis Naranjo Vargas
+
 Email: alexis.naranjo1998@gmail.com
 
 GitHub: Alexis1326
